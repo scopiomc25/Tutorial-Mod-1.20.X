@@ -7,5 +7,5 @@
   "ingredient": {
     "item": "tutorialmod:raw_sapphire_block"
   },
-  "result": "minecraft:sapphire_block"
+  "result": "tutorialmod:sapphire_block"
 }

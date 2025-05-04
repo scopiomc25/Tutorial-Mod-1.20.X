@@ -20,6 +20,7 @@ public class ModCreativeModeTabs {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                 pOutput.accept(ModItems.SAPPHIRE.get());
+                pOutput.accept(ModItems.METAL_DETECTOR.get());
 
                 pOutput.accept(Items.DIAMOND);
 

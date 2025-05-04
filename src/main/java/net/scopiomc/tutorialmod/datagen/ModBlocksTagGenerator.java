@@ -35,7 +35,16 @@ public class ModBlocksTagGenerator extends BlockTagsProvider {
                         ModBlocks.SAPPHIRE_ORE.get(),
                         ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
                         ModBlocks.NETHER_SAPPHIRE_ORE.get(),
-                        ModBlocks.END_STONE_SAPPHIRE_ORE.get());
+                        ModBlocks.END_STONE_SAPPHIRE_ORE.get(),
+                        ModBlocks.SAPPHIRE_STAIRS.get(),
+                        ModBlocks.SAPPHIRE_SLAB.get(),
+                        ModBlocks.SAPPHIRE_BUTTON.get(),
+                        ModBlocks.SAPPHIRE_PRESSURE_PLATE.get(),
+                        ModBlocks.SAPPHIRE_FENCE.get(),
+                        ModBlocks.SAPPHIRE_FENCE_GATE.get(),
+                        ModBlocks.SAPPHIRE_WALL.get(),
+                        ModBlocks.SAPPHIRE_DOOR.get(),
+                        ModBlocks.SAPPHIRE_TRAPDOOR.get());
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.SOUND_BLOCK.get());

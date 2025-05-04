@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.scopiomc.tutorialmod.TutorialMod;
+import net.scopiomc.tutorialmod.block.custom.SoundBlock;
 import net.scopiomc.tutorialmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -33,7 +34,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(1.5F).requiresCorrectToolForDrops(), UniformInt.of(2,4)));
     public static final RegistryObject<Block> END_STONE_SAPPHIRE_ORE = registerBlock("end_stone_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE).strength(3).requiresCorrectToolForDrops(), UniformInt.of(6,12)));
-
+    public static final RegistryObject<Block> SOUND_BLOCK =registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.NOTE_BLOCK).strength(1.5F)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

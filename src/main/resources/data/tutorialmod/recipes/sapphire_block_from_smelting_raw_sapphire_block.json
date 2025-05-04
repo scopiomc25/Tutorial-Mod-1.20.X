@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 700,
+  "experience": 0.7,
+  "group": "sapphire_block",
+  "ingredient": {
+    "item": "tutorialmod:raw_sapphire_block"
+  },
+  "result": "minecraft:sapphire_block"
+}

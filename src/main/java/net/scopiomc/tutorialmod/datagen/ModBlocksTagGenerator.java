@@ -8,6 +8,7 @@ import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.scopiomc.tutorialmod.TutorialMod;
 import net.scopiomc.tutorialmod.block.ModBlocks;
+import net.scopiomc.tutorialmod.item.ModToolTiers;
 import net.scopiomc.tutorialmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -45,12 +46,20 @@ public class ModBlocksTagGenerator extends BlockTagsProvider {
                         ModBlocks.SAPPHIRE_WALL.get(),
                         ModBlocks.SAPPHIRE_DOOR.get(),
                         ModBlocks.SAPPHIRE_TRAPDOOR.get());
+        this.tag(BlockTags.MINEABLE_WITH_SHOVEL);
+
+        this.tag(BlockTags.MINEABLE_WITH_HOE);
+
+        this.tag(BlockTags.SWORD_EFFICIENT);
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.SOUND_BLOCK.get());
 
+        this.tag(Tags.Blocks.NEEDS_WOOD_TOOL);
+
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.NETHER_SAPPHIRE_ORE.get());
+        this.tag(Tags.Blocks.NEEDS_GOLD_TOOL);
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SAPPHIRE_BLOCK.get(),
@@ -62,6 +71,11 @@ public class ModBlocksTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
+
+        this.tag(BlockTags.BEACON_BASE_BLOCKS)
+                .add(ModBlocks.SOUND_BLOCK.get());
+
+        this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL);
 
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.SAPPHIRE_FENCE.get());

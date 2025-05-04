@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "tutorialmod:sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:sapphire_button"
+  }
+}

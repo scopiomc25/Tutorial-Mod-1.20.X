@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "S": {
+      "item": "tutorialmod:sapphire"
+    }
+  },
+  "pattern": [
+    "SSS"
+  ],
+  "result": {
+    "count": 4,
+    "item": "tutorialmod:sapphire_trapdoor"
+  },
+  "show_notification": true
+}

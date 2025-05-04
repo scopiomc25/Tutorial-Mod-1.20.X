@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "tutorialmod:sapphire_block"
+    },
+    "S": {
+      "item": "tutorialmod:sapphire"
+    }
+  },
+  "pattern": [
+    "BSB",
+    "BSB"
+  ],
+  "result": {
+    "count": 2,
+    "item": "tutorialmod:sapphire_fence"
+  },
+  "show_notification": true
+}

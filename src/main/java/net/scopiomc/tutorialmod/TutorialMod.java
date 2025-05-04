@@ -1,7 +1,6 @@
 package net.scopiomc.tutorialmod;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -25,6 +24,7 @@ public class TutorialMod {
     public static final String MODID = "tutorialmod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+
     public TutorialMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 

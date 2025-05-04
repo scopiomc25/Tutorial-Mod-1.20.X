@@ -9,9 +9,7 @@
   "item.tutorialmod.sapphire_axe": "Sapphire Axe",
   "item.tutorialmod.sapphire_shovel": "Sapphire Shovel",
   "item.tutorialmod.sapphire_hoe": "Sapphire Hoe",
-
   "item.tutorialmod.strawberry": "Strawberry",
-
   "block.tutorialmod.sapphire_block": "Block of Sapphire",
   "block.tutorialmod.sound_block": "Sound Block",
   "block.tutorialmod.raw_sapphire_block": "Raw Sapphire Block",
@@ -28,12 +26,7 @@
   "block.tutorialmod.sapphire_wall": "Sapphire Wall",
   "block.tutorialmod.sapphire_door": "Sapphire Door",
   "block.tutorialmod.sapphire_trapdoor": "Sapphire Trapdoor",
-
-
-
-
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
-
   "tooltip.tutorialmod.metal_detector.tooltip": "Can Detect Various Valuable Ores in the World, and shows you the y-Level",
   "tooltip.tutorialmod.sound_block.tooltip": "Plays a random pitched Banjo, when used"
 }

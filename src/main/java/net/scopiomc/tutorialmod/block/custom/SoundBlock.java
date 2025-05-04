@@ -26,7 +26,7 @@ public class SoundBlock extends Block {
     @Override
     public InteractionResult use(BlockState pState, Level pLevel,
                                  BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        pLevel.playSound(pPlayer, pPos, SoundEvents.NOTE_BLOCK_BANJO.get(), SoundSource.BLOCKS, 1F, (float) (Math.random()*1.5+0.5));
+        pLevel.playSound(pPlayer, pPos, SoundEvents.NOTE_BLOCK_BANJO.get(), SoundSource.BLOCKS, 1F, (float) (Math.random() * 1.5 + 0.5));
         return super.use(pState, pLevel, pPos, pPlayer, pHand, pHit);
     }
 

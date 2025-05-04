@@ -14,17 +14,15 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = tag("needs_sapphire_tool");
 
 
-
-        private static TagKey<Block> tag(String name){
+        private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(TutorialMod.MODID, name));
         }
     }
+
     public static class Items {
 
 
-
-
-        private static TagKey<Item> tag(String name){
+        private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(TutorialMod.MODID, name));
         }
     }

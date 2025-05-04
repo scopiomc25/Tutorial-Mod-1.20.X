@@ -1,12 +1,12 @@
 package net.scopiomc.tutorialmod.datagen;
 
-import net.scopiomc.tutorialmod.TutorialMod;
-import net.scopiomc.tutorialmod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
+import net.scopiomc.tutorialmod.TutorialMod;
+import net.scopiomc.tutorialmod.block.ModBlocks;
 
 public class ModBlocksStateProvider extends BlockStateProvider {
     public ModBlocksStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {

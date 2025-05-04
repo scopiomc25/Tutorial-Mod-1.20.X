@@ -12,7 +12,6 @@ import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.scopiomc.tutorialmod.TutorialMod;
 import net.scopiomc.tutorialmod.block.ModBlocks;
 import net.scopiomc.tutorialmod.item.ModItems;
-import net.scopiomc.tutorialmod.util.ModTags;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -31,8 +30,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.7F, 50, "blasting");
         oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.3F, 100, "smelting");
-        oreSmelting(pWriter, RAW_SAPPHIRE_BLOCK_SMELTING, RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get(), 0.3F*12, 100*7, "smelting");
-        oreBlasting(pWriter, RAW_SAPPHIRE_BLOCK_SMELTING , RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get(), 0.7F*12, 50*7, "blasting");
+        oreSmelting(pWriter, RAW_SAPPHIRE_BLOCK_SMELTING, RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get(), 0.3F * 12, 100 * 7, "smelting");
+        oreBlasting(pWriter, RAW_SAPPHIRE_BLOCK_SMELTING, RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get(), 0.7F * 12, 50 * 7, "blasting");
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
@@ -65,7 +64,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
-        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.SAPPHIRE_FENCE.get(),2)
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.SAPPHIRE_FENCE.get(), 2)
                 .pattern("BSB")
                 .pattern("BSB")
                 .define('S', ModItems.SAPPHIRE.get())
@@ -102,12 +101,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('B', ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_SLAB.get(),6)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_SLAB.get(), 6)
                 .pattern("BBB")
                 .define('B', ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
                 .save(pWriter);
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_STAIRS.get(),6)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_STAIRS.get(), 6)
                 .pattern("B  ")
                 .pattern("BB ")
                 .pattern("BBB")
@@ -122,7 +121,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('s', Items.STICK)
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS,ModItems.SAPPHIRE_HOE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_HOE.get())
                 .pattern(" SS")
                 .pattern(" s ")
                 .pattern(" s ")
@@ -186,11 +185,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                                      List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
                                      float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
 
-        for(ItemLike itemlike : pIngredients) {
+        for (ItemLike itemlike : pIngredients) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory,
-                    pResult, pExperience, pCookingTime, pCookingSerializer)
+                            pResult, pExperience, pCookingTime, pCookingSerializer)
                     .group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
-                    .save(pFinishedRecipeConsumer, TutorialMod.MODID + ":" +getItemName(pResult)
+                    .save(pFinishedRecipeConsumer, TutorialMod.MODID + ":" + getItemName(pResult)
                             + pRecipeName + "_" + getItemName(itemlike));
         }
 

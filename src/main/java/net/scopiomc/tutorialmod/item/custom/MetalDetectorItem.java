@@ -11,7 +11,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.scopiomc.tutorialmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
@@ -25,21 +24,21 @@ public class MetalDetectorItem extends Item {
 
     @Override
     public InteractionResult useOn(UseOnContext pContext) {
-        if(pContext.getLevel().isClientSide()){
+        if (pContext.getLevel().isClientSide()) {
             BlockPos positonClicked = pContext.getClickedPos();
             Player player = pContext.getPlayer();
             boolean foundBlock = false;
 
             for (int i = 0; i <= positonClicked.getY() + 64; i++) {
-                BlockState state  = pContext.getLevel().getBlockState(positonClicked.below(i));
+                BlockState state = pContext.getLevel().getBlockState(positonClicked.below(i));
 
-                if(isValuableBlock(state)){
+                if (isValuableBlock(state)) {
                     outputValuableCoordinates(positonClicked.below(i), player, state.getBlock());
                     foundBlock = true;
                     break;
                 }
             }
-            if(!foundBlock){
+            if (!foundBlock) {
                 player.sendSystemMessage(Component.literal("No valuable ores found"));
             }
         }
@@ -51,7 +50,7 @@ public class MetalDetectorItem extends Item {
 
     private void outputValuableCoordinates(BlockPos blockPos, Player player, Block block) {
         player.sendSystemMessage(Component.literal("Found " + I18n.get(block.getDescriptionId())
-                + " at " + "(Y"+ blockPos.getY() + ")"));
+                + " at " + "(Y" + blockPos.getY() + ")"));
 
     }
 
@@ -65,6 +64,5 @@ public class MetalDetectorItem extends Item {
 
     private boolean isValuableBlock(BlockState state) {
         return state.is(ModTags.Blocks.METAL_DETECTOR_VALUABLES);
-
     }
 }

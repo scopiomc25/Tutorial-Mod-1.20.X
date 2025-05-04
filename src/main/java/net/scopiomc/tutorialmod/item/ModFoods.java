@@ -1,7 +1,5 @@
 package net.scopiomc.tutorialmod.item;
 
-import net.minecraft.advancements.critereon.MobEffectsPredicate;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;

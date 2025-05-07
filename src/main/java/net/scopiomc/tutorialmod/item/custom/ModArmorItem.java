@@ -1,15 +1,19 @@
 package net.scopiomc.tutorialmod.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.scopiomc.tutorialmod.item.ModArmorMaterials;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Map;
 
 public class ModArmorItem extends ArmorItem {
@@ -75,5 +79,11 @@ public class ModArmorItem extends ArmorItem {
         ItemStack helmet = player.getInventory().getArmor(3);
 
         return !helmet.isEmpty() && !chestplate.isEmpty() && !leggings.isEmpty() && !boots.isEmpty();
+    }
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+
+        pTooltipComponents.add(Component.translatable("tooltip.tutorialmod.armor.fullarmoreffect." + material.getName()));
+
+        super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 }

@@ -39,5 +39,7 @@
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Can Detect Various Valuable Ores in the World, and shows you the y-Level",
-  "tooltip.tutorialmod.sound_block.tooltip": "Plays a random pitched Banjo, when used"
+  "tooltip.tutorialmod.sound_block.tooltip": "Plays a random pitched Banjo, when used",
+
+  "tooltip.tutorialmod.armor.fullarmoreffect.tutorialmod:sapphire": "Full Armor Effect: Strength 3"
 }

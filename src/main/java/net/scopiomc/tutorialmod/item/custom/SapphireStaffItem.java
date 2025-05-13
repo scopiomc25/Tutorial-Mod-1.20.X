@@ -51,7 +51,7 @@ public class SapphireStaffItem extends Item {
 
             for (int i = 0; i < 120; i++) {
                 Vec3 pos = start.add(look.multiply(i * 0.25, i * 0.25, i * 0.25));
-                pLevel.addParticle(ParticleTypes.SONIC_BOOM, pos.x, pos.y, pos.z, 0, 0, 0);
+                pLevel.addParticle(ParticleTypes.SOUL_FIRE_FLAME, pos.x, pos.y, pos.z, 0, 0, 0);
             }
         }
 

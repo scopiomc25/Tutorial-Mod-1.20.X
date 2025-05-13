@@ -36,14 +36,14 @@
   "block.tutorialmod.sapphire_door": "Sapphire Door",
   "block.tutorialmod.sapphire_trapdoor": "Sapphire Trapdoor",
 
-  "creativetab.tutorial_tab": "Sapphire Tutorial Tab",
+  "creativetab.tutorial_tab": "§9§lSapphire §rTutorial Tab",
 
-  "tooltip.tutorialmod.metal_detector.tooltip": "Can Detect Various Valuable Ores in the World, and shows you the y-Level",
+  "tooltip.tutorialmod.metal_detector.tooltip": "Can Detect Various Valuable §bOres§r in the World, and shows you the §ay-Level",
   "tooltip.tutorialmod.sound_block.tooltip": "Plays a random pitched Banjo, when used",
   "tooltip.tutorialmod.staff.sapphire.1": "Shoots a 30 block long beam dealing §c8 damage§f",
   "tooltip.tutorialmod.staff.sapphire.2":  "Pierces up to §c5 Enemies§f",
   "tooltip.tutorialmod.staff.sapphire.3":  "All Enemies hit are §aset on fire for 10 Seconds ",
   "tooltip.tutorialmod.staff.sapphire.4":  "§5§l(Damage is decreased by 1 per Enemy piecred)",
 
-  "tooltip.tutorialmod.armor.fullarmoreffect.tutorialmod:sapphire": "Full Armor Effect: Strength IV"
+  "tooltip.tutorialmod.armor.fullarmoreffect.tutorialmod:sapphire": "Full Armor Effect: §4Strength IV"
 }

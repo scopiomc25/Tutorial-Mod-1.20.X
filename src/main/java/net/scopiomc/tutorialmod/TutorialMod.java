@@ -14,6 +14,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.scopiomc.tutorialmod.block.ModBlocks;
 import net.scopiomc.tutorialmod.item.ModCreativeModeTabs;
 import net.scopiomc.tutorialmod.item.ModItems;
+import net.scopiomc.tutorialmod.loot.ModLootModifiers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -33,11 +34,12 @@ public class TutorialMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        modEventBus.addListener(this::commonSetup);
+        ModLootModifiers.register(modEventBus);
 
+        modEventBus.addListener(this::commonSetup);
+        // test
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
-        // test
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

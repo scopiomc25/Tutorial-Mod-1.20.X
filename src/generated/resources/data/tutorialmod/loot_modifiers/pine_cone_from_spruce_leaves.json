@@ -1,0 +1,15 @@
+{
+  "type": "tutorialmod:add_item",
+  "conditions": [
+    {
+      "block": "minecraft:spruce_leaves",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.2,
+      "condition": "minecraft:random_chance_with_looting",
+      "looting_multiplier": 2.0
+    }
+  ],
+  "item": "tutorialmod:pine_cone"
+}

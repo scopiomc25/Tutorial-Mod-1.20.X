@@ -36,6 +36,7 @@ public class ModCreativeModeTabs {
                 pOutput.accept(ModItems.PINE_CONE.get());
 
                 pOutput.accept(ModItems.STRAWBERRY.get());
+                pOutput.accept(ModItems.STRAWBERRY_SEEDS.get());
 
                 pOutput.accept(Items.DIAMOND);
 

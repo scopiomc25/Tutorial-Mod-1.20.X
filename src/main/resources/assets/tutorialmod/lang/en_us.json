@@ -1,11 +1,13 @@
 {
   "item.tutorialmod.sapphire": "Sapphire",
   "item.tutorialmod.raw_sapphire": "Raw Sapphire",
+
   "item.tutorialmod.metal_detector": "Metal Detector",
 
   "item.tutorialmod.pine_cone": "Pine Cone",
   "item.tutorialmod.sapphire_hoe": "Sapphire Hoe",
   "item.tutorialmod.strawberry": "Strawberry",
+  "item.tutorialmod.strawberry_seeds" : "Strawberry Seeds",
 
   "item.tutorialmod.sapphire_staff": "Sapphire Staff",
   "item.tutorialmod.sapphire_sword": "Sapphire Sword",
@@ -17,12 +19,10 @@
   "item.tutorialmod.sapphire_chestplate": "Sapphire Chestplate",
   "item.tutorialmod.sapphire_leggings": "Sapphire Leggings",
   "item.tutorialmod.sapphire_boots": "Sapphire Boots",
-  "item.tutorialmod.strawberry_seeds" : "Strawberry Seeds",
 
-
+  "block.tutorialmod.sound_block": "Sound Block",
 
   "block.tutorialmod.sapphire_block": "Block of Sapphire",
-  "block.tutorialmod.sound_block": "Sound Block",
   "block.tutorialmod.raw_sapphire_block": "Raw Sapphire Block",
   "block.tutorialmod.sapphire_ore": "Sapphire Ore",
   "block.tutorialmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
@@ -37,12 +37,14 @@
   "block.tutorialmod.sapphire_wall": "Sapphire Wall",
   "block.tutorialmod.sapphire_door": "Sapphire Door",
   "block.tutorialmod.sapphire_trapdoor": "Sapphire Trapdoor",
+
   "block.tutorialmod.strawberry_crop" : "Strawberry Crop",
 
   "creativetab.tutorial_tab": "§9§lSapphire §rTutorial Tab",
 
   "tooltip.tutorialmod.metal_detector.tooltip": "Can Detect Various Valuable §bOres§r in the World, and shows you the §ay-Level",
   "tooltip.tutorialmod.sound_block.tooltip": "Plays a random pitched Banjo, when used",
+
   "tooltip.tutorialmod.staff.sapphire.1": "Shoots a 30 block long beam dealing §c8 damage§f",
   "tooltip.tutorialmod.staff.sapphire.2":  "Pierces up to §c5 Enemies§f",
   "tooltip.tutorialmod.staff.sapphire.3":  "All Enemies hit are §aset on fire for 10 Seconds ",

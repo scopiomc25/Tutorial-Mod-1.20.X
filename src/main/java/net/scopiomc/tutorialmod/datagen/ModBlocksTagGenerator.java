@@ -8,7 +8,6 @@ import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.scopiomc.tutorialmod.TutorialMod;
 import net.scopiomc.tutorialmod.block.ModBlocks;
-import net.scopiomc.tutorialmod.item.ModToolTiers;
 import net.scopiomc.tutorialmod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 

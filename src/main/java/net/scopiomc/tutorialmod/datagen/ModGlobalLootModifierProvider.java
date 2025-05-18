@@ -27,11 +27,11 @@ public class ModGlobalLootModifierProvider extends GlobalLootModifierProvider {
         }, ModItems.PINE_CONE.get()));
 
         add("metal_detector_from_jungle_temple", new AddItemModifier(new LootItemCondition[]{
-                new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build(),
+                new LootTableIdCondition.Builder(ResourceLocation.parse("chests/jungle_temple")).build(),
         }, ModItems.METAL_DETECTOR.get()));
 
         add("metal_detector_from_suspicious_sand", new AddSusSandItemModifier(new LootItemCondition[]{
-                new LootTableIdCondition.Builder(new ResourceLocation("archaeology/desert_pyramid")).build(),
+                new LootTableIdCondition.Builder(ResourceLocation.parse("archaeology/desert_pyramid")).build(),
         }, ModItems.METAL_DETECTOR.get()));
     }
 }

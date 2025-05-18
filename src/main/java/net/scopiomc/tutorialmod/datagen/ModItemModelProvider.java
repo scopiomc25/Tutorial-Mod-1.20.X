@@ -99,7 +99,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                 ResourceLocation trimResLoc = ResourceLocation.parse(trimPath); // minecraft namespace
                 ResourceLocation trimNameResLoc = ResourceLocation.fromNamespaceAndPath(MODID, currentTrimName);
 
-                // This is used for making the ExistingFileHelper acknowledge that this texture exist, so this will
+                // This is used for making the ExistingFileHelper acknowledge that this texture exists, so this will
                 // avoid an IllegalArgumentException
                 existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES, ".png", "textures");
 
